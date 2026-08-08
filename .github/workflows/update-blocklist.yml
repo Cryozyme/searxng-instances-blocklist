@@ -19,7 +19,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: "3.14.7"
 
       - name: Install dependencies
         run: pip install pyyaml
@@ -31,10 +31,14 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- searx-blocklist.txt; then
+          git add searx-blocklist.txt
+          # Compare the STAGED diff, not the working-tree diff. A brand-new
+          # file is untracked, so `git diff` (no --cached) sees nothing to
+          # compare and reports "no changes" even though the file exists --
+          # it never gets committed. Staging first fixes that.
+          if git diff --cached --quiet; then
             echo "No changes, nothing to commit."
           else
-            git add searx-blocklist.txt
             git commit -m "Update SearXNG blocklist ($(date -u +'%Y-%m-%d'))"
             git push
           fi
