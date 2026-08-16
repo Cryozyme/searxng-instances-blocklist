@@ -1,7 +1,7 @@
 ! Title: SearXNG Public Instances Blocklist
 ! Description: Auto-generated daily from searxng/searx-instances
 ! Source: https://raw.githubusercontent.com/searxng/searx-instances/master/searxinstances/instances.yml
-! Domain count: 84
+! Domain count: 85
 !
 ||baresearch.org^
 ||copp.gg^
@@ -10,6 +10,7 @@
 ||find.xenorio.xyz^
 ||grep.vim.wtf^
 ||kantan.cat^
+||libresearch.space^
 ||ooglester.com^
 ||opnxng.com^
 ||paulgo.io^
@@ -46,7 +47,6 @@
 ||search.serpensin.com^
 ||search.undertale.uk^
 ||search.unredacted.org^
-||search.url4irl.com^
 ||search.wdpserver.com^
 ||search.yuri.llc^
 ||search.zina.dev^
@@ -68,6 +68,7 @@
 ||searx.thefloatinglab.world^
 ||searx.tiekoetter.com^
 ||searx.tsmdt.de^
+||searxng.buffon.cloud^
 ||searxng.canine.tools^
 ||searxng.cups.moe^
 ||searxng.deggo.fyi^
