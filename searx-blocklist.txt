@@ -1,7 +1,7 @@
 ! Title: SearXNG Public Instances Blocklist
 ! Description: Auto-generated daily from searxng/searx-instances
 ! Source: https://raw.githubusercontent.com/searxng/searx-instances/master/searxinstances/instances.yml
-! Domain count: 81
+! Domain count: 80
 !
 ||anonsearch.win^
 ||baresearch.org^
@@ -26,7 +26,6 @@
 ||search.femboy.ad^
 ||search.hbubli.cc^
 ||search.im-in.space^
-||search.indst.eu^
 ||search.inetol.net^
 ||search.jeremyh.xyz^
 ||search.jns.net.ar^
